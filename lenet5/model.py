@@ -27,13 +27,10 @@ class Lenet5(nn.Module):
             nn.ReLU(),
             nn.Linear(84,10)
         )
-
         # tmp = torch.randn(2,3,32,32)
         # out = self.conv_unit(tmp)
         # print('conv out:',out.shape)
 
-        # nn.CrossEntropyLoss() 之前包含Softmax 所以不需要自己在进行Softmax
-        # self.criterion = nn.CrossEntropyLoss()
 
 
     def forward(self, x):
