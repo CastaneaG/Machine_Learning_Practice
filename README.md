@@ -1,6 +1,7 @@
 # Machine_Learning_Practice 机器学习经典网络结构实践
 
-当前仅对Resnet18与Lenet5进行了实现，使用cifar-10数据集
+对Resnet18与Lenet5进行了实现，使用cifar-10数据集
+对nn.RNN进行了简单实用
 
 注：
 - 运行训练代码会自动将数据集下载至data/cifar10下。
