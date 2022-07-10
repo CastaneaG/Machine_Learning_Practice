@@ -14,10 +14,12 @@ lr = 0.01
 model = MyModel()
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(),lr)
-
 hidden_prev = torch.zeros(1,1,hidden_size)
+print(model)
+
 
 for iter in range(6000):
+    #模拟数据
     start = np.random.randint(3,size=1)[0]
     time_steps = np.linspace(start,start+10,num_time_steps)
     data = np.sin(time_steps)

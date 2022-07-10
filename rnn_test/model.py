@@ -14,7 +14,7 @@ class MyModel(nn.Module):
             hidden_size= hidden_size,
             num_layers= 1,
             batch_first=True,
-            # batch_first=True [b,seq,word_vec]
+            # batch_first=True时 则输入为 [b,seq,word_vec]
         )
         for p in self.rnn.parameters():
             nn.init.normal_(p,mean=0.0,std=0.001)
